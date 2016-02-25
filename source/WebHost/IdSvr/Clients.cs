@@ -48,7 +48,7 @@ namespace WebHost.IdSvr
                     RedirectUris = new List<string>
                     {
                         // MVC code client manual
-                        "https://localhost:44312/callback",
+                        "https://membershipreboot.azurewebsites.net/callback",
                     },
 
                     AllowedScopes = new List<string>
@@ -100,6 +100,7 @@ namespace WebHost.IdSvr
                         // "simple JS client"
                         "http://localhost:37045/index.html",
                         "https://localhost:44331/Home/Callback",
+                        "https://membershipreboot.azurewebsites.net/admin",
 
                         // OAuthJS client
                         "http://localhost:23453/callback.html",
@@ -117,10 +118,10 @@ namespace WebHost.IdSvr
                         "http://localhost:21575/silent_renew.html",
 
                         // MVC form post sample
-                        "http://localhost:11716/account/signInCallback",
+                        "https://membershipreboot.azurewebsites.net/account/signInCallback",
 
                         // OWIN middleware client
-                        "http://localhost:2671/",
+                        "https://membershipreboot.azurewebsites.net",
                     },
 
                     PostLogoutRedirectUris = new List<string>
